@@ -6,6 +6,6 @@ Anushka Uppula
 ## Resource Class: Artifacts
 - **artifactName (string)**: The name of the artifact.
 
-- **originYear (number)**: The approximate year the artifact was created.
+- **originYear (string)**: The approximate year the artifact was created.
 
 - **culture (string)**: The culture or civilization associated with the artifact.
