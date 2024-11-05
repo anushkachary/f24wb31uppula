@@ -15,8 +15,17 @@ block content
   .container-fluid
     .row
       // Loop through each item in the results array
-      each artifact in results
+      each artifact, index in results
         .col-sm-2
           h3 #{artifact.artifactName}
           p Origin Year: #{artifact.originYear}
           p Culture: #{artifact.culture}
+          
+          // Button that calls buy() function with the index of the artifact
+          button(type="button", class="btn btn-outline-success", onclick=`buy(${index + 1})`) Purchase
+ 
+  // Script to define the buy() function
+  script.
+    function buy(index) {
+      alert(`You purchased item ${index}`);
+    }
